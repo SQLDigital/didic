@@ -40,7 +40,7 @@ def register(request):
     Save.country = country
     Save.zip = zip
     Save.account_No = acct
-    Save.userId = userId
+    Save.userid = userId
     Save.password = password
     Save.balance = "0.00"
     Save.routine = "BDOFOMRU"
@@ -48,3 +48,4 @@ def register(request):
     Save.save()
 
     return render(request, 'index.html',{'result': acct})
+    
