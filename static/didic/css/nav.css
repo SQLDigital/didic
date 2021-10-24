@@ -1,0 +1,450 @@
+
+/* MENU CONFIGURATION
+**********************************************************/
+.jetmenu {
+    width: auto;
+    padding: 0;
+    margin: 40px 0 0 0;
+    position: relative;
+    float: right;
+    list-style: none;
+    font-family: 'Open Sans', Arial;
+    /*font-weight: 700;*/
+    z-index: 10;
+    font-family: 'Poppins', sans-serif;
+}
+
+.jetmenu li{
+	display: inline-block;
+	float: left;
+	margin:0;
+	padding:0;
+	
+}
+.jetmenu a{
+	-o-transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	transition: all .3s linear;
+	outline: none;
+	z-index: 10;
+}
+/*********************/
+.jetmenu > li > a {
+        padding: 15px 10px;
+        font-size: 14px;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        /*line-height:70px;*/
+        text-transform: uppercase;
+        position: relative;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+
+.jetmenu > li.active > a{
+	color: #fff;
+	position:relative;
+	
+	/*background-color:#055494;*/
+	
+}
+
+.jetmenu > li:hover > a {
+	background: #fcaf17;
+	color: #fff;
+}
+/* DROPDOWN CONFIGURATION
+**********************************************************/
+.jetmenu ul.dropdown, 
+.jetmenu ul.dropdown li ul.dropdown {
+	list-style: none;
+    margin: 0;
+    padding: 0;   
+	display: none;
+    position: absolute;
+    z-index: 99;
+	min-width: 220px;
+	background: #fcaf17;
+	
+}
+.jetmenu ul.dropdown{
+    top: 48x;
+	/*border-top: 1px solid rgba(255, 255, 255, 0.3);*/
+}
+.jetmenu ul.dropdown li ul.dropdown{
+    right: 100%;
+	top: inherit;
+}
+.jetmenu ul.dropdown li{
+	clear:both;
+	width:100%;
+	font-size: 14px;
+	border-bottom:1px solid rgba(255, 255, 255, 0.1);
+}
+.jetmenu ul.dropdown li a{
+	width:100%;
+	padding:10px 15px;
+	display:inline-block;
+	float:left;
+	clear:both;
+	text-decoration: none;
+	color: #fff;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; 
+	-webkit-box-sizing:border-box;
+	
+}
+.jetmenu ul.dropdown li:hover > a{
+	background: #000;
+	color: #fff;
+}
+
+/* dropdowns to left side */
+.jetmenu ul.dropdown li ul.dropdown.left{
+    left: auto;
+	right: 100%;
+}
+
+/* SUBMENU INDICATORS
+**********************************************************/
+.jetmenu .indicator{
+	position: relative;
+	left: 5px;
+	top: 0;
+	font-size: 14px;
+	float: right;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	
+}
+.jetmenu ul li .indicator{
+	font-size: 12px;
+	top: 1px;
+	left: 10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+}
+
+/* MEGAMENU
+**********************************************************/
+.jetmenu > li > .megamenu{
+	position: absolute;
+	display: none;
+	background: #0061b9;
+	width: 45%;
+	top: 48x;
+	font-size: 11px;
+	color: #fff;
+	z-index: 99;
+	padding: 10px 20px 10px;
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* megamenu list */
+.jetmenu li > .megamenu ul{
+	margin: 0 0 0 0;
+	float: left;
+	padding: 0;
+	display: block;
+	position: relative;
+}
+.jetmenu li > .megamenu ul li{
+	width: 100%;
+	padding: 8px 0;
+	border-bottom:1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+
+
+/* megamenu links */
+.jetmenu li > .megamenu a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+	-webkit-transition: color 0.3s linear; 
+	-moz-transition: color 0.3s linear; 
+	-o-transition: color 0.3s linear; 
+	transition: color 0.3s linear;
+	
+
+}
+.jetmenu li > .megamenu a:hover{
+	color: #00192d;
+
+}
+
+
+
+
+
+/* MEGAMENU WIDTHS
+**********************************************************/
+
+.jetmenu > li > .megamenu.full-width{
+	width: 100%;
+	left:0;
+	background: #000
+	
+}
+
+
+/* MEGAMENU GRID SYSTEM
+**********************************************************/
+.megamenu .row{
+	width: 100%;
+	margin-top: 15px;
+}
+.megamenu .row:first-child {
+	margin-top: 0;
+}
+.megamenu .row:before,
+.megamenu .row:after {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+.megamenu .row:after {
+	clear: both;
+}
+.megamenu .row .col1
+{
+	display: block;
+	width: 20%;
+	padding:0 10px;
+	min-height: 20px;
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+
+
+/* ICONS (FONT AWESOME)
+**********************************************************/
+.jetmenu > li > a > i{
+	line-height: 23px !important;
+	margin-right: 6px;
+	font-size: 18px;
+	float: left;
+}
+
+/* COLLAPSIBLE MENU
+**********************************************************/
+.title h5{
+	font-size:14px;
+	font-family: 'titilliumtext25l999_wt';
+	color:#4AD8FF;
+	font-weight:normal;
+	margin:0 0 10px 0;
+}
+.jetmenu > li.showhide{
+	display: none;
+	width: 50px; float:right;
+	height:auto;
+	cursor: pointer;
+	color: #fff;
+	background: #fff;
+
+}
+.jetmenu > li.showhide span.title{
+	margin: 15px 0 0 25px;
+	float: left;
+	font-size:0;
+	display:none;
+
+}
+.jetmenu > li.showhide span.icon{
+	margin: 0;
+	float: right;
+	padding:10px;
+	background:#FCAF17;
+
+	
+}
+.jetmenu > li.showhide .icon em{
+	margin-bottom: 3px;
+	display: block;
+	width: 30px;
+	height: 2px;
+	background: #fff;
+}
+
+/* STYLES
+**********************************************************/
+
+/* RESPONSIVE LAYOUT
+**********************************************************/
+@media only screen and (max-width: 1184px) {
+.jetmenu { margin: 19px 0 0 0;}
+header.smaller .jetmenu {margin: 6px 0 0 0;}
+	}
+@media only screen and (max-width: 1023px) {	
+.jetmenu > li > a {padding: 15px 6px;font-size: 12px;}}
+@media only screen and (max-width: 995px) {
+
+.jetmenu{
+	width:100%;
+	top:0;
+	right:0;
+	position:absolute;
+	background-color:transparent !important;
+	}
+
+.jetmenu:after{
+	display:none;
+}
+
+.jetmenu > li > a{
+
+	border-left:0;
+	border-right:0;
+	border:0;
+	line-height:normal;
+	color:#fff !important;
+
+}
+
+.jetmenu > li.active > a:after{
+
+	display:none;
+
+}
+.jetmenu  li:first-child {
+	border-bottom:0;
+	background-color:transparent !important;
+}
+.jetmenu  li {
+	border-bottom:1px solid rgba(0, 0, 0, 0.1);
+	background-color:#0860A8;
+}
+
+.jetmenu ul.dropdown li a{
+	border-bottom:1px solid rgba(255, 255, 255, 0.1);
+	color:#fff;
+}
+
+.jetmenu > li{
+	display: block;
+	width: 100%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; 
+	-webkit-box-sizing:border-box;
+	
+}
+
+
+.jetmenu > li > a{
+		padding: 15px 25px;
+		color:#000;
+	}
+
+.jetmenu a{
+	width: 100%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; 
+	-webkit-box-sizing:border-box; 
+}
+
+
+.jetmenu ul.dropdown, 
+.jetmenu ul.dropdown li ul.dropdown{
+		width: 100% !important;
+		left: 0;
+		position: static !important;
+		border: none;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box; 
+		-webkit-box-sizing:border-box; 
+	}
+
+
+.jetmenu ul.dropdown li {
+		background: #055494 !important;
+		border: none;
+	}
+
+.jetmenu ul.dropdown > li > a{
+		padding-left: 40px !important;
+	}
+.jetmenu ul.dropdown > li > a:hover{
+	background-color:#000;
+	}
+/***********mega menu***********/
+
+.megamenu .row .col1{
+	display: block;
+	width: 100%;
+	height:auto;
+	float: left;
+	
+}
+		
+.megamenu .row .col1 ul {
+	display: block;
+	float: left;
+	width:100%;
+	
+
+	
+}
+	
+.jetmenu > li > .megamenu .row:first-child  [class*="col"]:first-child {
+		margin-top: 0;
+		
+	}
+
+.jetmenu > li > .megamenu .row{
+		margin-top: 0;
+	}
+.jetmenu > li > ul.dropdown > li > a{
+	padding-left: 40px !important;
+	}
+
+.jetmenu > li > ul.dropdown > li > ul.dropdown > li > a{
+	padding-left: 60px !important;
+	}
+
+.jetmenu > li > ul.dropdown > li > ul.dropdown > li > ul.dropdown > li > a{
+	padding-left: 80px !important; 
+	}
+	
+}
+
+@media only screen and (max-width: 874px) {
+header.smaller .jetmenu {
+    margin: 13px 0 0 0;
+}}
+@media only screen and (max-width: 767px) {
+.jetmenu > li.showhide .icon em{width:20px}
+.jetmenu > li.showhide span.icon { padding: 8px 8px 5px 8px;margin-top: 10px;}
+header.smaller .jetmenu > li.showhide span.icon{margin-top:2px}
+.jetmenu > li > a {
+    padding: 12px 15px;
+
+}
+.jetmenu .indicator {
+    position: relative;
+    left: 5px;
+    top: 0;
+    font-size: 14px;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    width: 25px;
+    height: 18px;
+    text-align: center;
+}
+}

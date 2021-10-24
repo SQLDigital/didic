@@ -1,0 +1,30 @@
+﻿.gg {
+    max-width: 250px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.srch-btn {
+    width: 20% !important;
+    margin: 0px 20px 0px 20px !important;
+    float: right !important;
+}
+.pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    float: right !important; 
+    list-style: none;
+    border-radius: 0.25rem;
+    margin-top: 15px !important;
+}
+
+div#example2_info {
+    margin-top: 15px !important;
+}
+.dataTables_filter {
+    float: right !important;
+}
+main .grid-container, header .grid-container, .navigation-a > div, footer > div {
+    max-width: 100% !important;
+}

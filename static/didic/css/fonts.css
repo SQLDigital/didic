@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Aller Light';
+    src: url('../fonts/Aller-Light.eot');
+    src: url('../fonts/Aller-Light-1.eot') format('embedded-opentype'),
+        url('../fonts/Aller-Light.woff2') format('woff2'),
+        url('../fonts/Aller-Light.woff') format('woff'),
+        url('../fonts/Aller-Light.ttf') format('truetype'),
+        url('../fonts/Aller-Light.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aller Regular';
+    src: url('../fonts/Aller.eot');
+    src: url('../fonts/Aller-1.eot') format('embedded-opentype'),
+        url('../fonts/Aller.woff2') format('woff2'),
+        url('../fonts/Aller.woff') format('woff'),
+        url('../fonts/Aller.ttf') format('truetype'),
+        url('../fonts/Aller.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Aller Display';
+    src: url('../fonts/AllerDisplay.eot');
+    src: url('../fonts/AllerDisplay-1.eot') format('embedded-opentype'),
+        url('../fonts/AllerDisplay.woff2') format('woff2'),
+        url('../fonts/AllerDisplay.woff') format('woff'),
+        url('../fonts/AllerDisplay.ttf') format('truetype'),
+        url('../fonts/AllerDisplay.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aller Bold';
+    src: url('../fonts/Aller-Bold.eot');
+    src: url('../fonts/Aller-Bold-1.eot') format('embedded-opentype'),
+        url('../fonts/Aller-Bold.woff2') format('woff2'),
+        url('../fonts/Aller-Bold.woff') format('woff'),
+        url('../fonts/Aller-Bold.ttf') format('truetype'),
+        url('../fonts/Aller-Bold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+

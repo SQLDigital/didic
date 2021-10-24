@@ -1,0 +1,241 @@
+
+
+.drop{
+	width:23%;
+	float:right;
+	margin:0 0 5px 0;
+}
+
+.tab-wrap{
+	width:100%;
+	float:left;position:relative;   
+	}
+.tab-wrap:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    background: #000;
+    height: 100%;
+    right: 80.7%;
+}
+
+.group::after, .tabBlock-tabs::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+
+
+ol, ul {
+	margin:0;
+}
+
+
+
+.unstyledList, .tabBlock-tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.tabBlock-tabs {
+	text-align:left;
+	width:19.3%;
+	float:left;padding-top: 200px;
+	 padding-left: 50px;
+    position: relative;
+    background: #000
+}
+.tabBlock {
+  margin: 0;
+  
+}
+
+.tabBlock-tab {
+  /*background-color: #ffffff;
+  border:0;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  float: left;
+  width: 20%;*/
+  /*min-height: 144px;*/
+ /* display: flex;
+align-items: center; text-align:center;
+  position: relative;
+  transition: 0.1s ease-in-out;*/
+ /* margin: 5px 0;*/
+ /* font-size:16px;    padding: 1% 1%;
+  text-align:center;*/
+  /*border: 1px solid #e0e0e0;*/
+  
+}
+.tabBlock-tab i {
+       font-size: 25px;
+   
+}
+.pad2{
+  padding: 10px 20px;}
+/***********/
+
+.tabBlock-tab {
+	font-size:14px;
+    color: #fff;
+    width: 100%; text-transform:uppercase;
+    display: inline-block;
+    padding: 24px 0px;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+
+/*.tabBlock-tab:last-of-type {
+  border-right-style: solid;
+}
+.tabBlock-tab::before, .tabBlock-tab::after {
+  content: "";
+  display: block;
+  height: 4px;
+  position: absolute;
+  transition: 0.1s ease-in-out;
+}
+/*.tabBlock-tab::before {
+  background-color: #ed87bd;
+  left: -2px;
+  right: -2px;
+  top: -2px;
+}
+.tabBlock-tab::after {
+  background-color: transparent;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+}*/
+.tabBlock-tab:hover {
+  /*background-color:#ed1c24;*/
+}
+.tabBlock-tab.is-active {
+  position: relative;
+  color:  #dba61b;
+  z-index: 1; 
+    
+}
+.tabBlock-tab:hover a{color:#fff;}
+.tabBlock-tab.is-active a{color: #fff; background: #ed1c24;}
+/*.tabBlock-tab.is-active::before {
+  background-color: #d870a9;
+}
+.tabBlock-tab.is-active::after {
+  background-color: white;
+}
+*/
+
+.ficileft {
+    width: 100%;float:left;
+	 position:relative;
+}
+
+.departarrow{margin-bottom:20px; float:left; width:100%;}
+.tabBlock-content {
+ position: relative;
+ 
+  float:right;
+  width: 80.2%;
+  
+  
+ 
+}
+
+.tabBlock-pane > :last-child {
+  margin-bottom: 0;
+}
+
+.tabBlock-content h1 {
+	color:#91BF15;
+	font-size:24px;
+	margin:0 0 25px 0;
+	padding:0;
+}
+
+
+/***********************640px *************************************/
+@media only screen and (max-width: 640px) {
+
+.tabBlock-tab {
+  padding: 10px 10px;
+  border-bottom:1px solid #F1F1F1;
+  
+ 
+}
+
+}
+/***********************480px *************************************/
+@media only screen and (max-width: 1184px) {
+.tabBlock-tabs {width: 28%;}
+.tabBlock-content {width: 71%;}	
+.tab-wrap:before{right:71.7%;}
+.tabBlock-tab{padding:15px 0px}
+.tabBlock-tabs{padding-top:170px;}
+	}
+	
+
+
+@media only screen and (max-width: 1090px){
+.tabBlock-tabs {width: 33%;}
+.tabBlock-content {width: 66%;}
+.tabBlock-tabs {padding-top: 100px;}
+.tab-wrap:before {right: 66.7%;}
+	}
+@media only screen and (max-width:995px) {
+	.tabBlock-tab {
+    padding: 9px 0px;
+}
+.tabBlock-tabs{padding-left:25px;}
+}
+@media only screen and (max-width: 874px) {
+
+ul.tabBlock-tabs {
+    width: 100%;
+    float: left;
+}
+.tab-wrap:before{display:none}
+ul.tabBlock-tabs{padding-top:65px; padding-bottom: 25px;}
+.tabBlock-tabs, .tabBlock-content {
+	text-align:left;
+	width:100%;
+	float:left;
+}
+.tabBlock-tab {
+ font-size:12px;
+ 
+}
+
+.tabBlock-content {
+margin-top:20px;
+ 
+ 
+}
+
+}
+@media only screen and (max-width: 767px) {
+ul.tabBlock-tabs{padding-right:30px}
+	}
+/***********************640px *************************************/
+@media only screen and (max-width: 360px) {
+.tabBlock {
+
+  
+}
+.tabBlock-tab {
+  padding: 10px 10px;
+  border:0;
+   margin:1px 0;
+   width:100%;
+  float:left;
+}
+
+}
