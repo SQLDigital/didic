@@ -8413,22 +8413,22 @@ body[themebg-pattern="theme6"] {
 .pcoded[theme-layout="vertical"][vertical-nav-type="fullpage"] .pcoded-main-container, .pcoded[theme-layout="vertical"][vnavigation-view="view3"] .pcoded-main-container {
   position: static; }
 .pcoded .pcoded-header[header-theme="theme1"] {
-  background: #0d417e; }
+  background: #000; }
   .pcoded .pcoded-header[header-theme="theme1"] .input-group-addon,
   .pcoded .pcoded-header[header-theme="theme1"] a {
     color: #fff; }
 .pcoded .pcoded-header[header-theme="theme2"] {
-  background: #b71c1c; }
+  background: #000; }
   .pcoded .pcoded-header[header-theme="theme2"] .input-group-addon,
   .pcoded .pcoded-header[header-theme="theme2"] a {
     color: #fff; }
 .pcoded .pcoded-header[header-theme="theme3"] {
-  background: #4CAF50; }
+  background: #000; }
   .pcoded .pcoded-header[header-theme="theme3"] .input-group-addon,
   .pcoded .pcoded-header[header-theme="theme3"] a {
     color: #fff; }
 .pcoded .pcoded-header[header-theme="theme4"] {
-  background: #d84315; }
+  background: #000; }
   .pcoded .pcoded-header[header-theme="theme4"] .input-group-addon,
   .pcoded .pcoded-header[header-theme="theme4"] a {
     color: #fff; }

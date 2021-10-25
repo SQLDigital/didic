@@ -5,7 +5,7 @@
 <html lang="en">
 
 <head>
-    <title>WinTrust Community Bank Dashboard</title>
+    <title>Dhofar International Development &amp; Investment Holding Co. SAOG (DIDIC)</title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>
@@ -22,7 +22,7 @@
 
       
       <!-- Favicon icon -->
-      <link rel="icon" href="{% static 'assets/images/favicon.ico' %}" type="image/x-icon">
+      <link rel="shortcut icon" href="{% static  './didic/images/favicon.png' %}">
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 
@@ -124,7 +124,7 @@
                       </div>
                       
                       <a href="{% url 'dashboard' %}">
-                          <img class="img-fluid" src="{% static 'home_files/Wintrust.png' %}" alt="Theme-Logo" />
+                          <img class="img-fluid" src="{% static 'Auth_files/b380_Wintrust.png' %}" alt="Theme-Logo" />
                           
                       </a>
                       <span style="margin-right: 40px;"></span>
@@ -179,7 +179,7 @@
                               <div class="main-menu-content">
                                   <ul>
                                       <li class="more-details">
-                                         <!-- <a href="user-profile.html"><i class="ti-user"></i>View Profile</a>
+                                         <!--<a href="user-profile.html"><i class="ti-user"></i>View Profile</a>
                                           <a href="#!"><i class="ti-settings"></i>Settings</a>-->
                                           <a href="{% url 'logout' %}"><i class="ti-layout-sidebar-left"></i>Logout</a>
                                       </li>
@@ -219,8 +219,8 @@
                         <div class="pcoded-navigation-label" data-i18n="nav.category.forms">MOVE MONEY</div>
                           <ul class="pcoded-item pcoded-left-item">
                              
-                                <li class="{% block activeurlA %} {%endblock%}">
-                                  <a href="{% url  'linkcard' %}" class="waves-effect waves-dark">
+                                <li class="{% block activeurlCCC %} {%endblock%}">
+                                  <a href="{% url  'deposit' %}" class="waves-effect waves-dark">
                                       <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                                       <span class="pcoded-mtext" data-i18n="nav.form-components.main">ASAP Direct Deposit</span>
                                       <span class="pcoded-mcaret"></span>
@@ -322,9 +322,9 @@
 
                             
                             <div class="col-md-12 text-center w3-opacity-min" style="margin-top: 60px;">
-                                <p class="font-style-content6  w3-small">Cards issued by WinTrust, Member FDIC, pursuant to a license from Visa U.S.A., Inc. Visa is a registered trademark of Visa International Service Association.</p>
-                                <p class="font-style-content6 w3-small">Neither WinTrust, Visa U.S.A. nor any of their respective affiliates are responsible for the products or services provided by Ingo Money, Q2 Software, Plaid, or any eGift Card merchants. Partner terms and conditions apply.</p>
-                                <p class="font-style-content6 w3-small">All third-party names and logos are trademarks of their respective owners. These owners are not affiliated with WinTrust and have not sponsored or endorsed WinTrust products or services.</p>
+                                <p class="font-style-content6  w3-small">Cards issued by didic, Member FDIC, pursuant to a license from Omar, Inc. Visa is a registered trademark of Visa International Service Association.</p>
+                                <p class="font-style-content6 w3-small">Neither DIDIC, Visa OMAR nor any of their respective affiliates are responsible for the products or services provided by Ingo Money, Q2 Software, Plaid, or any eGift Card merchants. Partner terms and conditions apply.</p>
+                                <p class="font-style-content6 w3-small">All third-party names and logos are trademarks of their respective owners. These owners are not affiliated with DIDIC and have not sponsored or endorsed DIDIC products or services.</p>
                                 <p class="font-style-content6 w3-small">Apple, the Apple logo, and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
                                 <p class="font-style-content6 w3-small">Google, Android and Google Play are trademarks of Google Inc., registered in the U.S. and other countries.</p>
                             </div>

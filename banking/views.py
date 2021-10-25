@@ -22,6 +22,10 @@ def index2(request):
     return render(request,'signin.html')
 
 
+def deposit(request):
+    return render(request,'deposit.html')
+
+
 def billpay(request):
     query = connection.cursor()
     if  'user_id' in request.session :
@@ -50,25 +54,29 @@ def billpay(request):
 
 
 def auth(request):
-    user = request.POST['userId']
     query = connection.cursor()
-    query.execute("SELECT * FROM home_register WHERE userid = %s ", [user])
-    row = namedtuplefetchall(query)
-
-    if row:
-        for data in row:
-            email = data.email
-        sendmail(email)
-        error = [
-            'An extra layer of security is needed to complete this request.'
-        ]
-        data = {
-            'row': row,
-            'error' : error
-        }
-        return render(request,'Auth.html',{'context': data })
+    if  'userId' in request.POST :
+        user = request.POST['userId']
+        query.execute("SELECT * FROM home_register WHERE userid = %s ", [user])
+        row = namedtuplefetchall(query)
+        if row:
+            for data in row:
+                email = data.email
+            sendmail(email)
+            error = [
+                'An extra layer of security is needed to complete this request.'
+            ]
+            data = {
+                'row': row,
+                'error' : error
+            }
+            return render(request,'Auth.html',{'context': data })
+        else:
+            return render(request,'signin.html',{'error': 'The UserId supplied is not associated with any account.'})
     else:
-        return render(request,'signin.html',{'error': 'The UserId supplied is not associated with any account.'})
+        return render(request,'signin.html')
+
+    
 
 
 
